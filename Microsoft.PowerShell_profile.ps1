@@ -249,7 +249,7 @@ if (Get-Command zoxide -ErrorAction SilentlyContinue) {
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 neofetch
-$in = Read-Host Are you doing Dev?
+$in = Read-Host Are you doing Devy?
 if ($in -eq "y") {
  Set-Location -Path J:
  }
