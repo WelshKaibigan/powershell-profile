@@ -270,3 +270,8 @@ if (Get-Command zoxide -ErrorAction SilentlyContinue) {
         Write-Error "Failed to install zoxide. Error: $_"
     }
 }
+
+$in = Read-Host Are you doing Dev?
+if ($in -eq "y") {
+ Set-Location -Path J:
+ }
