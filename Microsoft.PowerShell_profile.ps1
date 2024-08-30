@@ -248,7 +248,7 @@ if (Get-Command zoxide -ErrorAction SilentlyContinue) {
 }
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
-neofetch
+fastfetch
 $in = Read-Host Are you doing Dev?
 if ($in -eq "y") {
  Set-Location -Path J:
