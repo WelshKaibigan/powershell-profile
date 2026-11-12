@@ -233,7 +233,7 @@ Set-PSReadLineOption -Colors @{
 }
 
 ## Final Line to set prompt
-oh-my-posh init pwsh --config J:\ohmyposhv3-v2.json | Invoke-Expression
+Invoke-Expression (&starship init powershell)
 if (Get-Command zoxide -ErrorAction SilentlyContinue) {
     Invoke-Expression (& { (zoxide init powershell | Out-String) })
 } else {
